@@ -49,7 +49,7 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/gambol99/go-oidc"
+  name = "github.com/gbraxton/go-oidc"
   packages = [
     "http",
     "jose",

@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gambol99/go-oidc/jose"
-	"github.com/gambol99/go-oidc/oidc"
+	"github.com/gbraxton/go-oidc/jose"
+	"github.com/gbraxton/go-oidc/oidc"
 )
 
 // extractIdentity parse the jwt token and extracts the various elements is order to construct
@@ -40,7 +40,7 @@ func extractIdentity(token jose.JWT) (*userContext, error) {
 	if err != nil || !found {
 		preferredName = identity.Email
 	}
-	audience, found, err := claims.StringClaim(claimAudience)
+	audience, found, err := claims.StringFromArrayClaim(claimAudience)
 	if err != nil || !found {
 		return nil, ErrNoTokenAudience
 	}

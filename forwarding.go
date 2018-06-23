@@ -20,8 +20,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gambol99/go-oidc/jose"
-	"github.com/gambol99/go-oidc/oidc"
+	"github.com/gbraxton/go-oidc/jose"
+	"github.com/gbraxton/go-oidc/oidc"
 	"go.uber.org/zap"
 )
 

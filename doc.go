@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gambol99/go-oidc/jose"
+	"github.com/gbraxton/go-oidc/jose"
 	"github.com/prometheus/client_golang/prometheus"
 )
 
